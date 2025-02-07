@@ -84,6 +84,8 @@ cmd(
 
 > KAVI-MD MENU MSG 🍀
 `;
+      await robin.sendPresenceUpdate('recording', from);
+      await robin.sendMessage(from, { audio: { url: "https://github.com/kaviduRs/MD-HELP/raw/refs/heads/main/voice/MSLAVA%20FUNK!%20(1).mp3" }, mimetype: 'audio/mpeg', ptt: true }, { quoted: mek });
       await robin.sendMessage(
         from,
         {
