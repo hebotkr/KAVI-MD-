@@ -5,16 +5,16 @@ cmd({
     react: "⚠️",
     alias: ["ban"],
     desc: "Block a user instantly.",
-    category: "main",
+    category: "group",
     filename: __filename
 },
 async (robin, mek, m, { quoted, reply, isOwner }) => {
     try {
         // Check if the user is the bot owner
-        if (!isOwner) return reply("⚠️ Only the owner can use this command!");
+        if (!isOwner) return reply("☢️ Only the owner can use this command ☢️");
 
         // Check if the command is used on a quoted message
-        if (!quoted) return reply("⚠️ Please reply to the user's message to block them!");
+        if (!quoted) return reply("☢️ Please reply to the user's message to block them ‼️");
 
         // Extract the target user from the quoted message
         const target = quoted.sender;
@@ -36,22 +36,22 @@ cmd({
     alias: ["remove", "ban"],
     react: "⚠️",
     desc: "Remove a mentioned user from the group.",
-    category: "main",
+    category: "group",
     filename: __filename
 },
 async (robin, mek, m, { from, isGroup, isAdmins, isBotAdmins, reply, quoted }) => {
     try {
         // Check if the command is used in a group
-        if (!isGroup) return reply("⚠️ This command can only be used in a group!");
+        if (!isGroup) return reply("☢️ This command can only be used in a group ☢️");
 
         // Check if the user issuing the command is an admin
-        if (!isAdmins) return reply("⚠️ Only group admins can use this command!");
+        if (!isAdmins) return reply("☢️ Only group admins can use this command ‼️");
 
         // Check if the bot is an admin
-        if (!isBotAdmins) return reply("⚠️ I need to be an admin to execute this command!");
+        if (!isBotAdmins) return reply("⚠️ I need to be an admin to execute this command ‼️");
 
         // Ensure a user is mentioned
-        if (!quoted) return reply("⚠️ Please reply to the user's message you want to kick!");
+        if (!quoted) return reply("⚠️ Please reply to the user's message you want to kick ‼️");
 
         // Get the target user to remove
         const target = quoted.sender;
@@ -81,7 +81,7 @@ cmd({
     alias: ["leave", "exit"],
     react: "⚠️",
     desc: "Leave the current group.",
-    category: "main",
+    category: "group",
     filename: __filename
 },
 async (robin, mek, m, { from, isGroup, isOwner, reply }) => {
@@ -110,7 +110,7 @@ cmd({
     alias: ["silence", "lock"],
     react: "⚠️",
     desc: "Set group chat to admin-only messages.",
-    category: "main",
+    category: "group",
     filename: __filename
 },
 async (robin, mek, m, { from, isGroup, isAdmins, isBotAdmins, reply }) => {
@@ -140,7 +140,7 @@ cmd({
     alias: ["unlock"],
     react: "⚠️",
     desc: "Allow everyone to send messages in the group.",
-    category: "main",
+    category: "group",
     filename: __filename
 },
 async (robin, mek, m, { from, isGroup, isAdmins, isBotAdmins, reply }) => {
@@ -171,7 +171,7 @@ cmd({
     alias: ["invite"],
     react: "➕",
     desc: "Add a user to the group.",
-    category: "main",
+    category: "group",
     filename: __filename
 },
 async (robin, mek, m, { from, isGroup, isAdmins, isBotAdmins, reply, args }) => {
@@ -208,7 +208,7 @@ cmd({
     alias: ["member"],
     react: "⚠️",
     desc: "Remove admin privileges from a mentioned user.",
-    category: "main",
+    category: "group",
     filename: __filename
 },
 async (robin, mek, m, { from, isGroup, isAdmins, isBotAdmins, reply, quoted }) => {
@@ -256,7 +256,7 @@ cmd({
     alias: ["admin", "makeadmin"],
     react: "⚡",
     desc: "Grant admin privileges to a mentioned user.",
-    category: "main",
+    category: "group",
     filename: __filename
 },
 async (robin, mek, m, { from, isGroup, isAdmins, isBotAdmins, reply, quoted }) => {
