@@ -63,6 +63,7 @@ cmd(
 ❮❮ *MAIN COMMANDS* ❯❯
 
    ${menu.main}
+   .owner
 ❮❮ *DOWNLOAD COMMANDS* ❯❯
 
     ${menu.download}    
@@ -71,7 +72,8 @@ cmd(
     ${menu.group}
 ❮❮ *OWNER COMMANDS* ❯❯
 
-    ${menu.owner}
+    .restart
+    .update
 ❮❮ *CONVERT COMMANDS* ❯❯
 
     ${menu.convert}
