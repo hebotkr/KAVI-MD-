@@ -40,7 +40,7 @@ cmd(
     }
   ) => {
     try {
-      if (!q) return reply("*නමක් හරි ලින්ක් එකක් හරි දෙන්න* 🌚❤️");
+      if (!q) return reply("*නමක් හරි ලින්ක් එකක් හරි දෙන්න* 😉");
 
       // Search for the video
       const search = await yts(q);
@@ -49,16 +49,18 @@ cmd(
 
       // Song metadata description
       let desc = `
-*❤️ROBIN SONG DOWNLOADER❤️*
+*💛 𝐊𝐀𝐕𝐈-𝐌𝐃 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑 💛*
 
-👻 *title* : ${data.title}
-👻 *description* : ${data.description}
-👻 *time* : ${data.timestamp}
-👻 *ago* : ${data.ago}
-👻 *views* : ${data.views}
-👻 *url* : ${data.url}
 
-𝐌𝐚𝐝𝐞 𝐛𝐲 𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋
+📃 *title* : ${data.title}
+📜 *description* : ${data.description}
+⌛ *time* : ${data.timestamp}
+⚔️ *ago* : ${data.ago}
+🙈 *views* : ${data.views}
+⛓️‍💥 *url* : ${data.url}
+
+
+𝐌𝐚𝐝𝐞 𝐛𝐲 *𝐊𝐀𝐕𝐈𝐃𝐔 𝐑𝐀𝐒𝐀𝐍𝐆𝐀*  🎗️
 `;
 
       // Send metadata thumbnail message
@@ -80,7 +82,7 @@ cmd(
           : durationParts[0] * 60 + durationParts[1];
 
       if (totalSeconds > 1800) {
-        return reply("⏱️ audio limit is 30 minitues");
+        return reply("⏱️ audio limit is 30 minitues ‼️");
       }
 
       // Send audio file
@@ -100,12 +102,12 @@ cmd(
           document: { url: songData.download.url },
           mimetype: "audio/mpeg",
           fileName: `${data.title}.mp3`,
-          caption: "𝐌𝐚𝐝𝐞 𝐛𝐲 𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋",
+          caption: "𝐌𝐚𝐝𝐞 𝐛𝐲 *𝐊𝐀𝐕𝐈𝐃𝐔 𝐑𝐀𝐒𝐀𝐍𝐆𝐀*  🎗️",
         },
         { quoted: mek }
       );
 
-      return reply("*Thanks for using my bot* 🌚❤️");
+      return reply("*Thanks for using kavi-md* 💛");
     } catch (e) {
       console.log(e);
       reply(`❌ Error: ${e.message}`);
