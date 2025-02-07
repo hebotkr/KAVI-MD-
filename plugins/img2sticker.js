@@ -43,7 +43,7 @@ cmd(
       // Ensure the message contains an image or video to convert to a sticker
       if (!quoted || !(quoted.imageMessage || quoted.videoMessage)) {
         return reply(
-          "Please reply to an image or video to convert it to a sticker."
+          "Please reply to an image or video to convert it to a sticker.😉"
         );
       }
 
@@ -53,8 +53,8 @@ cmd(
 
       // Create the sticker from the media
       const sticker = new Sticker(media, {
-        pack: "𝐑_𝐎_𝐁_𝐈_𝐍", // Sticker pack name
-        author: "𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋", // Sticker author name
+        pack: "𝗞𝗔𝗩𝗜-𝗠𝗗", // Sticker pack name
+        author: "𝗞𝗔𝗩𝗜𝗗𝗨 𝗥𝗔𝗦𝗔𝗡𝗚𝗔", // Sticker author name
         type: StickerTypes.FULL, // Sticker type (FULL or CROPPED)
         quality: 50, // Quality of the output sticker (0–100)
       });
