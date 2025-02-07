@@ -61,7 +61,7 @@ cmd(
 
 ❮❮ *MAIN COMMANDS* ❯❯
 
-    ${menu.main}
+   ${menu.main}
 ❮❮ *DOWNLOAD COMMANDS* ❯❯
 
     ${menu.download}    
