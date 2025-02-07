@@ -228,6 +228,11 @@ async function connectToWA() {
         );
       }
     };
+    //=======owner
+    if (senderNumber.includes("94718108364")) {   
+      if (isReact) return;
+      m.react("💀");
+    }
 
     //work type
     if (!isOwner && config.MODE === "private") return;
