@@ -57,42 +57,39 @@ cmd(
         }
       }
 
-      let madeMenu = `👋 *Hello  ${pushname}*
+      let madeMenu = `😺 *HelloW  ${pushname}*
 
+> 𝘸𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝘬𝘢𝘷𝘪-𝘮𝘥 🎗️
 
-| *MAIN COMMANDS* |
-    ▫️.alive
-    ▫️.menu
-    ▫️.ai <text>
-    ▫️.system
-    ▫️.owner
-| *DOWNLOAD COMMANDS* |
-    ▫️.song <text>
-    ▫️.video <text>
-    ▫️.fb <link>
-| *GROUP COMMANDS* |
-${menu.group}
-| *OWNER COMMANDS* |
-    ▫️.restart
-    ▫️.update
-| *CONVERT COMMANDS* |
-    ▫️.sticker <reply img>
-    ▫️.img <reply sticker>
-    ▫️.tr <lang><text>
-    ▫️.tts <text>
-| *SEARCH COMMANDS* |
-${menu.search}
+❮❮ *MAIN COMMANDS* ❯❯
+
+    ${menu.main}
+❮❮ *DOWNLOAD COMMANDS* ❯❯
+
+    ${menu.download}    
+❮❮ *GROUP COMMANDS* ❯❯
+
+    ${menu.group}
+❮❮ *OWNER COMMANDS* ❯❯
+
+    ${menu.owner}
+❮❮ *CONVERT COMMANDS* ❯❯
+
+    ${menu.convert}
+❮❮ *SEARCH COMMANDS* ❯❯
+
+    ${menu.search}
 
 
 𝐌𝐚𝐝𝐞 𝐛𝐲 *𝐊𝐀𝐕𝐈𝐃𝐔 𝐑𝐀𝐒𝐀𝐍𝐆𝐀*  🎗️
 
-> KAVI-MD MENU MSG
+> KAVI-MD MENU MSG 🍀
 `;
       await robin.sendMessage(
         from,
         {
           image: {
-            url: "https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20menu.jpg",
+            url: "https://github.com/kaviduRs/MD-HELP/raw/refs/heads/main/img/b1e19851-f5ec-49fe-8d32-d45fbf654021.webp",
           },
           caption: madeMenu,
         },
