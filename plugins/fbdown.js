@@ -63,7 +63,6 @@ cmd(
 *💛 𝐊𝐀𝐕𝐈-𝐌𝐃 𝐅𝐁 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑 💛*
 
 
-📃 *Title*: ${title || "Unknown"}
 ♨️ *Quality*: ${hd ? "HD Available" : "SD Only"}
 
 
@@ -73,7 +72,7 @@ cmd(
         from,
         {
           image: {
-            url: "https://github.com/kaviduRs/MD-HELP/blob/main/img/Screenshot_20250207171755~2.png",
+            url: "https://raw.githubusercontent.com/kaviduRs/MD-HELP/refs/heads/main/img/_25-02-07_18-08-09-933.jpg",
           },
           caption: desc,
         },
