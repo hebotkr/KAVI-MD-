@@ -8,7 +8,7 @@ cmd(
     react: "🍀",
     alias: ["s", "stick"],
     desc: "Convert an image to a sticker",
-    category: "utility",
+    category: "convert",
     filename: __filename,
   },
   async (
