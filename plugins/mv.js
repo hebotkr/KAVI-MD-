@@ -38,7 +38,7 @@ cmd({
         const searchResults = movieData.slice(0, 10);
 
         // Format and send the search results message
-        let resultsMessage = `📽️ *DARKBOT SEARCH REASULT➜ * "${q}":\n\n`;
+        let resultsMessage = `📽️ *KAVI-MD SEARCH REASULT➜* "${q}":\n\n`;
         searchResults.forEach((result, index) => {
             const title = result.title || 'No title available';
             const link = result.link || 'No link available';
@@ -46,7 +46,7 @@ cmd({
             resultsMessage += `*${index + 1}.* ${title}\n🔗 Link: ${link}\n`;
 
             // You can also display the thumbnail in the results if needed
-            resultsMessage += `📸 Thumbnail: ${thumbnail}\n\n`;
+            resultsMessage += `📸 *Thumbnail* : ${thumbnail}\n\n`;
         });
 
         const sentMsg = await conn.sendMessage(m.chat, {
