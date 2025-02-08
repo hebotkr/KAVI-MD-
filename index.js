@@ -28,7 +28,6 @@ const util = require("util");
 const { sms, downloadMediaMessage } = require("./lib/msg");
 const axios = require("axios");
 const { File } = require("megajs");
-const aiCommand = require("./plugins/ai.js");
 const prefix = config.PREFIX;
 
 const ownerNumber = config.OWNER_NUM;
