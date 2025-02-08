@@ -1,10 +1,12 @@
 //---- *REPLACE WITH YOUR API KEY* 🤌
+const {
+  GoogleGenerativeAI,
+  HarmCategory,
+  HarmBlockThreshold,
+} = require("@google/generative-ai");
+const { GoogleAIFileManager } = require("@google/generative-ai/server");
+const fs = require("fs")
 
-
-const axios = require("axios")
-
-const GEMINI_API_KEY = "@google/generative-ai";  //REPLACE WITH YOUR API KEY OF GEMINI
-const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
 cmd({
   pattern: "ai",
