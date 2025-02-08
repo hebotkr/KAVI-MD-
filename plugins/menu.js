@@ -92,7 +92,7 @@ cmd(
         from,
         {
           image: {
-            url: "https://github.com/kaviduRs/MD-HELP/raw/refs/heads/main/img/b1e19851-f5ec-49fe-8d32-d45fbf654021.webp",
+            url: "https://raw.githubusercontent.com/kaviduRs/MD-HELP/refs/heads/main/img/IMG-20250205-WA0002.jpg",
           },
           caption: madeMenu,
         },
