@@ -31,6 +31,6 @@
     "wa-sticker-formatter": "^4.4.4",
     "cheerio": "^1.0.0",
     "os": "^0.1.2",
-    "@google/generative-ai": "^0.21.0"
+    "@google-ai/generativelanguage": "^2.9.0"
   }
 }
