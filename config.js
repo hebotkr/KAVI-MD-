@@ -6,8 +6,8 @@ function convertToBool(text, fault = "true") {
   return text === fault ? true : false;
 }
 module.exports = {
-  SESSION_ID: process.env.SESSION_ID || "cwYVCLDD#KFqWF2_vy3CDIQNEBoJ_8AKEXUayuBoY2UYXsMfWDKo",
-  OWNER_NUM: process.env.OWNER_NUM || "94762858448",
+  SESSION_ID: process.env.SESSION_ID || "Q0IQ2Z7S#T7hi_MrPRnTbSftp1vqblPVTER9mCrN-if5HY751Qew",
+  OWNER_NUM: process.env.OWNER_NUM || "94718108364",
   PREFIX: process.env.PREFIX || ".",
   ALIVE_IMG: process.env.ALIVE_IMG || "https://raw.githubusercontent.com/kaviduRs/MD-HELP/refs/heads/main/img/IMG-20250205-WA0002.jpg",
   ALIVE_MSG: process.env.ALIVE_MSG || "*Yes I'm Alive noW!!* 🙈\n\n\n🎗️ *JOIN OUR MV GROUP ➜* https://chat.whatsapp.com/Lp91cySvXueFChmygbmdCF\n\n🎗️ *CARTOON GROUP ➜* https://chat.whatsapp.com/CurZjvmwN735el7Wdomqsl\n\n\n> 𝐌𝐚𝐝𝐞 𝐛𝐲 *𝐊𝐀𝐕𝐈𝐃𝐔 𝐑𝐀𝐒𝐀𝐍𝐆𝐀*  🎗️",
